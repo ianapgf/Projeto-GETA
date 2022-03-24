@@ -1,0 +1,88 @@
+//codigo index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Geta</title>
+</head>
+<body>
+    
+    <center>
+
+        <h1>Processo Seletivo</h1> 
+
+        <label id = "numero" >0</label>
+
+        <br>
+
+        <button onclick="somar()">+</button>
+        <button onclick="subtrair()">−</button>
+
+        <br>
+
+        <img src="res/pp.jpeg" title = "GETA">
+ 
+    </center>
+
+</body>
+</html>
+//--------------------------------------------------------------------------------
+//codigo main.javascript
+var x;
+x = 0;
+
+function somar(){
+    x = parseInt(x);
+    x++
+    document.getElementById("numero").innerText = x
+}
+
+function subtrair(){
+    x = parseInt(x);
+    x--
+    document.getElementById("numero").innerText = x
+}
+//------------------------------------------------------------------------------
+//codigo style.css
+body {
+    background-color: rgb(114, 114, 114);
+}
+
+h1 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 300%;
+}
+
+button {
+    border-color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+label {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px;
+}
+
+img {
+    position: relative;
+    width: 10%;
+    border-radius: 50%;
+    margin-right: 90%;
+    top: -180px;
+}
+
+
+
+
+
+
+
+
+
+
